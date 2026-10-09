@@ -186,26 +186,15 @@ Artificial Intelligence
 
 ## Excercise 1: AI Battle (20 min)
 
-
-Use arena.ai in battle mode — two AIs answer the same prompt, you vote for the better response.
-
-Round 1 — "Easy" (5 min)
-
-I plan to wash my car. The car wash is 50m away. Should I take the car or go by foot?
-
-Round 2 — "Complicated" (10 min)
-
-I have 10GB of spectral measurement data I'd like to analyze. Which programming language should I use, and why?
-
-This is intentionally incomplete — iterate, add constraints, push for a concrete architecture.
-
-Reflection (5 min) — discuss with your neighbour: where did they do well? Where did they struggle? Did either model ever admit uncertainty?
-
 ===
 
 <!-- .slide: data-state="standard 10" -->
 
-## Access and deployment
+# Access & Deployment
+
+===
+
+<!-- .slide: data-state="standard 10" -->
 
 <div style="font-size: large">
 
