@@ -11,4 +11,4 @@ Find which model you are using
 Look up information about the model
   - Find documentation of how model applies privacy & security (GDPR)
 
-(Coding With AI Lession: https://southampton-rsg-training.github.io/coding-with-ai/2-ai-assisted-coding.html )
+(Coding With AI Lesson: https://southampton-rsg-training.github.io/coding-with-ai/2-ai-assisted-coding.html )
