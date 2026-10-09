@@ -4,8 +4,10 @@ Choose ChatGPT, Copilot or another available system. Find and record:
 
 Check the settings:
   - Find a setting about reusing your content for training?
+    
 Find which model you are using
   - See the differences between lighter and heavier models
+    
 Look up information about the model
   - Find documentation of how model applies privacy & security (GDPR)
 
