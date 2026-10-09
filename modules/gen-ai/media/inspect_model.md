@@ -1,4 +1,4 @@
-## Inspecting GenAI Models
+## Checking AI Client Settings
 
 Choose ChatGPT, Copilot or another available system. Find and record:
 
