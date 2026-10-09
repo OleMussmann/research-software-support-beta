@@ -25,29 +25,6 @@ order: 1
 
 <!-- .slide: data-state="standard 10" -->
 
-## The AI Family Tree
-
-AI can be visualised as a set of nested fields. Each inner layer represents a more specific set of techniques within the broader area.
-
-```
-┌─────────────────────────────────────────┐
-│  Artificial Intelligence                │
-│  ┌───────────────────────────────────┐  │
-│  │  Machine Learning                 │  │
-│  │  ┌─────────────────────────────┐  │  │
-│  │  │  Deep Learning              │  │  │
-│  │  │ ┌───────────────────────┐   │  │  │
-│  │  │ │Generative AI(e.g.LLMs)│   │  │  │
-│  │  │ └───────────────────────┘   │  │  │
-│  │  └─────────────────────────────┘  │  │
-│  └───────────────────────────────────┘  │
-└─────────────────────────────────────────┘
-```
-
-===
-
-<!-- .slide: data-state="standard 10" -->
-
 ## Gen AI Tree
 
 ```
@@ -96,6 +73,31 @@ Artificial Intelligence
 2. Research instrument: use AI to measure, classify, generate or analyse
 3. Research co-creator: use AI during ideation, drafting or interpretation
 4. Research infrastructure: embed AI in services, repositories, portals or workflows
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## What is an LLM?
+
+- Predicts the next token, one at a time: fluent ≠ true
+- Non-deterministic: same prompt, different answers
+- Frozen at a training cutoff: doesn't know the latest library versions
+- No separation between instructions and data: everything is just text in the context
+- Context window: everything the model "sees" — fills up, degrades, gets compacted
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## Agent = Model + Harness
+
+- **Model**: the LLM, stateless, only produces text
+- **Harness**: the loop around it — runs tools, enforces permissions, manages context
+  - Tools: file edits, shell, web search, MCP servers
+  - Skills and instruction files (`AGENTS.md`)
+  - "Memory" is just files fed back into the context
+
 
 ===
 
@@ -221,6 +223,29 @@ Reflection (5 min) — discuss with your neighbour: where did they do well? Wher
 
 <!-- .slide: data-state="standard 10" -->
 
+## Residency vs Jurisdiction
+
+- **Residency**: where the data is stored and processed
+- **Jurisdiction**: whose law applies to the provider
+- An EU datacenter run by a US company is still subject to the US CLOUD Act
+- Also check: DPA, subprocessors, retention, no training on your data, zero data retention (ZDR)
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## Cost Model
+
+- **Subscription**: flat fee, usage limits
+- **API**: pay per token, input and output priced separately
+- Agentic use consumes far more tokens than chat — the whole context is re-sent every turn
+  - Cache hits are cheaper, but cost still piles up
+- Larger models cost more: match model size to the task
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
 ## A Framework for Tool Assessment
 
 - Purpose: What research task is being supported, and what would count as success?
@@ -255,6 +280,35 @@ Reflection (5 min) — discuss with your neighbour: where did they do well? Wher
 | Sustainability | Resource-intensive computation or duplicated infrastructure | Match model size and frequency to the task; prefer proportionate use |
 
 </div>
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## The Lethal Trifecta
+
+Dangerous when an agent has **all three**:
+
+1. 🔐 Access to private data
+2. 🌐 Exposure to untrusted content (web pages, issues, emails, files)
+3. 📤 A way to communicate externally
+
+Remove one leg, and prompt injection loses most of its teeth.
+
+Sandboxing can help protecting against injection _and_ mistakes
+
+===
+
+<!-- .slide: data-state="standard 10" -->
+
+## Licensing
+
+- Purely AI-generated output is likely not copyrightable (US and EU)
+- Open-source licences rely on copyright, so licensing purely AI-written code is shaky
+- Generated code may reproduce licensed code verbatim
+  - Snippet scanners exist (e.g. SCANOSS), but tooling is immature
+  - Vendor "public code" filters and indemnities shift liability, they don't guarantee clean code
+- Some open-source projects restrict or ban AI-generated contributions
 
 ===
 
